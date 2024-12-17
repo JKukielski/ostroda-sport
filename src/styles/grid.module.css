@@ -1,0 +1,22 @@
+
+@media screen and (min-width: 768px) {
+    .item1 {
+        grid-column: 1/ 6;
+        grid-row: 1 / 6;
+    }
+    
+    .item2 {
+        grid-column: 6/ 9;
+        grid-row: 1 / 6;
+    }
+    
+    .item3 {
+        grid-column: 1/ 4;
+        grid-row: 6 / 11;
+    }
+    
+    .item4 {
+        grid-column: 4/ 9;
+        grid-row: 6 / 11;
+    } 
+}
