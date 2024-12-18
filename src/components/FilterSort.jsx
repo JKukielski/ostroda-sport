@@ -3,6 +3,9 @@
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Button } from './ui/button';
+import CategoryFilter from './CategoryFilter';
+import AuthorFilter from './AuthorFilter';
+import SortFilter from './SortFilter';
 
 export default function FilterSort({
   fetchedCategories,
@@ -117,49 +120,23 @@ export default function FilterSort({
         <div className="relative">
           <Button onClick={handleCategoryToggle}>KATEGORIE</Button>
           {toggleCategory && (
-            <div className="absolute w-[200px] bg-primary top-12 shadow-sm rounded-sm text-complimentary p-4 z-10">
-              <fieldset className="relative w-full h-full">
-                <h2>Kategorie</h2>
-                {fetchedCategories?.map((category) => (
-                  <div key={category._id}>
-                    <input
-                      type="checkbox"
-                      value={category.slug.current}
-                      name={category.slug.current}
-                      id={category.slug.current}
-                      checked={categories.includes(category.slug.current)}
-                      onChange={(e) => handleCategoryChange(e.target.value)}
-                    />
-                    <label htmlFor={category.slug.current}>
-                      {category.title}
-                    </label>
-                  </div>
-                ))}
-              </fieldset>
-            </div>
+            <CategoryFilter
+              fetchedCategories={fetchedCategories}
+              categories={categories}
+              handleCategoryChange={handleCategoryChange}
+              handleCategoryToggle={handleCategoryToggle}
+            />
           )}
         </div>
         <div className="relative">
           <Button onClick={handleAuthorToggle}>AUTOR</Button>
           {toggleAuthor && (
-            <div className="absolute w-[200px] bg-primary top-12 shadow-sm rounded-sm text-complimentary p-4 z-10">
-              <fieldset className="relative w-full h-full">
-                <legend>Autor</legend>
-                {fetchedAuthors?.map((author) => (
-                  <div key={author._id}>
-                    <input
-                      type="checkbox"
-                      value={author.slug.current}
-                      name={author.slug.current}
-                      id={author.slug.current}
-                      checked={authors.includes(author.slug.current)}
-                      onChange={(e) => handleAuthorChange(e.target.value)}
-                    />
-                    <label htmlFor={author.slug.current}>{author.name}</label>
-                  </div>
-                ))}
-              </fieldset>
-            </div>
+            <AuthorFilter
+              fetchedAuthors={fetchedAuthors}
+              authors={authors}
+              handleAuthorChange={handleAuthorChange}
+              handleAuthorToggle={handleAuthorToggle}
+            />
           )}
         </div>
         <div className="relative">
@@ -167,86 +144,14 @@ export default function FilterSort({
             SORTUJ
           </Button>
           {toggleSort && (
-            <div className="absolute w-[200px] bg-primary top-12 shadow-sm rounded-sm text-complimentary p-4 z-10">
-              <fieldset className="relative w-full h-full">
-                <legend>Sortuj</legend>
-                <div>
-                  <input
-                    type="radio"
-                    value="oldest"
-                    checked={sort === 'oldest'}
-                    onChange={(e) => handleSortChange(e.target.value)}
-                  />
-                  <label htmlFor="">{`Data: (od najstarszej)`}</label>
-                </div>
-                <div>
-                  <input
-                    type="radio"
-                    value="latest"
-                    checked={sort === 'latest'}
-                    onChange={(e) => handleSortChange(e.target.value)}
-                  />
-                  <label htmlFor="">{`Data: (od najnowszej)`}</label>
-                </div>
-              </fieldset>
-            </div>
+            <SortFilter
+              handleSortChange={handleSortChange}
+              sort={sort}
+              handleSortToggle={handleSortToggle}
+            />
           )}
         </div>
       </div>
-
-      {/* <fieldset>
-        <legend>Kategorie</legend>
-        {fetchedCategories?.map((category) => (
-          <div key={category._id}>
-            <input
-              type="checkbox"
-              value={category.slug.current}
-              name={category.slug.current}
-              id={category.slug.current}
-              checked={categories.includes(category.slug.current)}
-              onChange={(e) => handleCategoryChange(e.target.value)}
-            />
-            <label htmlFor={category.slug.current}>{category.title}</label>
-          </div>
-        ))}
-      </fieldset>
-      <fieldset>
-        <legend>Sortuj</legend>
-        <div>
-          <input
-            type="radio"
-            value="oldest"
-            checked={sort === 'oldest'}
-            onChange={(e) => handleSortChange(e.target.value)}
-          />
-          <label htmlFor="">{`Data: (od najstarszej)`}</label>
-        </div>
-        <div>
-          <input
-            type="radio"
-            value="latest"
-            checked={sort === 'latest'}
-            onChange={(e) => handleSortChange(e.target.value)}
-          />
-          <label htmlFor="">{`Data: (od najnowszej)`}</label>
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>Autor</legend>
-        {fetchedAuthors?.map((author) => (
-          <div key={author._id}>
-            <input
-              type="checkbox"
-              value={author.slug.current}
-              name={author.slug.current}
-              id={author.slug.current}
-              checked={authors.includes(author.slug.current)}
-              onChange={(e) => handleAuthorChange(e.target.value)}
-            />
-            <label htmlFor={author.slug.current}>{author.name}</label>
-          </div>
-        ))}
-      </fieldset> */}
     </div>
   );
 }
