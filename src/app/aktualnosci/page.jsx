@@ -24,7 +24,6 @@ export default async function Posts(props) {
   });
 
   const totalPages = Math.ceil(totalPosts / postsPerPage);
-  console.log(totalPages);
 
   return (
     <section className="w-full flex flex-col justify-start items-center py-6 h-[calc(100%-8rem)] md:h-[calc(100vh-8rem)] ">
