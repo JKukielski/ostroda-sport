@@ -15,10 +15,26 @@ export const formatDate = (isoDate) => {
   return formatter.format(date).replace(/\//g, '.');
 };
 
-export const truncateText = (text, wordLimit) => {
-  const words = text.split(' ');
-  if (words.length > wordLimit) {
-    return words.slice(0, wordLimit).join(' ') + ' ...';
+export const truncateText = (text) => {
+  const words = text.split(/\s+/);
+
+  if (words.length > 20) {
+    return words.slice(0, 20).join(' ') + '...';
   }
   return text;
+};
+
+export const blocksToText = (blocks, opts = {}) => {
+  const options = Object.assign({}, { nonTextBehavior: 'remove' }, opts);
+  return blocks
+    .map((block) => {
+      if (block._type !== 'block' || !block.children) {
+        return options.nonTextBehavior === 'remove'
+          ? ''
+          : `[${block._type} block]`;
+      }
+
+      return block.children.map((child) => child.text).join('');
+    })
+    .join('\n\n');
 };
