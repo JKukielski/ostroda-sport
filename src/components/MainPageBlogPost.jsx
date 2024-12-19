@@ -31,7 +31,7 @@ export default function MainPageBlogPost({ post, index }) {
             </p>
           ) : null}
         </div>
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       </div>
     </Link>
   );
