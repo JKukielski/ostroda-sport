@@ -20,7 +20,11 @@ export const getPostBySlug = async (slug) => {
                     url
                 }
             },
-        }
+        },
+        "categories": category[]->{
+        title,
+        slug
+    }
     }
         `);
 
