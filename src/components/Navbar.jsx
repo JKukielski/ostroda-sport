@@ -18,9 +18,9 @@ export default function Navbar() {
               <Image
                 src="/logo_light.png"
                 alt="logo"
-                width={120}
-                height={60}
-                style={{ width: '120px', height: '60px' }}
+                width={100}
+                height={50}
+                style={{ width: '100px', height: '50px' }}
               />
             </Link>
           </div>
@@ -28,18 +28,21 @@ export default function Navbar() {
             <Link
               href="https://www.facebook.com/ostrodasportteam"
               className="w-[25px] h-[25px] flex justify-center items-center bg-additional text-primary rounded-full md:w-[35px] md:h-[35px] md:text-lg"
+              target="_blank"
             >
               <FaFacebookF />
             </Link>
             <Link
               href="https://www.instagram.com/ostrodasportteam?igsh=MTZvZWU4MHk3dHA1dA=="
               className="w-[25px] h-[25px] flex justify-center items-center bg-additional text-primary rounded-full md:w-[35px] md:h-[35px] md:text-lg"
+              target="_blank"
             >
               <FaInstagram />
             </Link>
             <Link
               href="https://www.tiktok.com/@ostrodaaportteam?_t=8rUtwcuLsbm&amp;_r=1"
               className="w-[25px] h-[25px] flex justify-center items-center bg-additional text-primary rounded-full md:w-[35px] md:h-[35px] md:text-lg"
+              target="_blank"
             >
               <FaTiktok />
             </Link>
@@ -61,33 +64,33 @@ export default function Navbar() {
 
         <div className="w-full hidden font-anton tracking-wider md:h-full md:flex md:text-sm lg:w-[80%]">
           <ul className="w-full flex justify-between md:h-full md:flex lg:justify-between lg:px-3">
-            <Link href="/#about" className="h-full group">
+            <Link href="/o-nas" className="h-full group">
               <li className="transition-transform duration-300 border-b-4 border-solid border-additional group-hover:border-primary h-full flex items-center">
                 O NAS
               </li>
             </Link>
-            <Link href="/#tax" className="h-full group">
+            <Link href="/1-dla-ostroda-sport-team" className="h-full group">
               <li className="transition-transform duration-300 border-b-4 border-solid border-additional group-hover:border-primary h-full flex items-center">
                 PRZEKAŻ 1,5% PODATKU
               </li>
             </Link>
-            <Link href="/#train" className="h-full group">
+            <Link href="/trenuj-z-nami" className="h-full group">
               {' '}
               <li className="transition-transform duration-300 border-b-4 border-solid border-additional group-hover:border-primary h-full flex items-center">
                 TRENUJ Z NAMI
               </li>
             </Link>
-            <Link href="/#team" className="h-full group">
+            <Link href="/zespol" className="h-full group">
               <li className="transition-transform duration-300 border-b-4 border-solid border-additional group-hover:border-primary h-full flex items-center">
                 NASZ ZESPÓŁ
               </li>
             </Link>
-            <Link href="/#schedule" className="h-full group">
+            <Link href="/#harmonogram" className="h-full group">
               <li className="transition-transform duration-300 border-b-4 border-solid border-additional group-hover:border-primary h-full flex items-center">
                 HARMONOGRAM
               </li>
             </Link>
-            <Link href="/#contact" className="h-full group">
+            <Link href="/#kontakt" className="h-full group">
               <li className="transition-transform duration-300 border-b-4 border-solid border-additional group-hover:border-primary h-full flex items-center">
                 KONTAKT
               </li>
@@ -105,7 +108,7 @@ export default function Navbar() {
           <div className="py-4 flex flex-col items-center gap-4">
             <Link
               onClick={() => setToggleMenu(false)}
-              href="/#about"
+              href="/o-nas"
               className="block rounded-lg px-4 py-2 text-sm text-complimentary hover:bg-gray-50 hover:text-gray-700"
               role="menuitem"
             >
@@ -114,7 +117,7 @@ export default function Navbar() {
 
             <Link
               onClick={() => setToggleMenu(false)}
-              href="/#tax"
+              href="/1-dla-ostroda-sport-team"
               className="block rounded-lg px-4 py-2 text-sm text-complimentary hover:bg-gray-50 hover:text-gray-700"
               role="menuitem"
             >
@@ -123,7 +126,7 @@ export default function Navbar() {
 
             <Link
               onClick={() => setToggleMenu(false)}
-              href="/#train"
+              href="/trenuj-z-nami"
               className="block rounded-lg px-4 py-2 text-sm text-complimentary hover:bg-gray-50 hover:text-gray-700"
               role="menuitem"
             >
@@ -132,7 +135,7 @@ export default function Navbar() {
 
             <Link
               onClick={() => setToggleMenu(false)}
-              href="/#team"
+              href="/zespol"
               className="block rounded-lg px-4 py-2 text-sm text-complimentary hover:bg-gray-50 hover:text-gray-700"
               role="menuitem"
             >
@@ -141,7 +144,7 @@ export default function Navbar() {
 
             <Link
               onClick={() => setToggleMenu(false)}
-              href="/#schedule"
+              href="/#harmonogram"
               className="block rounded-lg px-4 py-2 text-sm text-complimentary hover:bg-gray-50 hover:text-gray-700"
               role="menuitem"
             >
@@ -150,7 +153,7 @@ export default function Navbar() {
 
             <Link
               onClick={() => setToggleMenu(false)}
-              href="/#contact"
+              href="/#kontakt"
               className="block rounded-lg px-4 py-2 text-sm text-complimentary hover:bg-gray-50 hover:text-gray-700"
               role="menuitem"
             >

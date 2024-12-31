@@ -3,6 +3,7 @@ import './globals.css';
 import { Anton } from 'next/font/google';
 import { Roboto } from 'next/font/google';
 import { SanityLive } from '@/sanity/lib/live';
+import Footer from '@/components/Footer';
 
 export const anton = Anton({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <SanityLive />
+        <Footer />
       </body>
     </html>
   );

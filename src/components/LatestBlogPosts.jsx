@@ -7,7 +7,7 @@ export default async function LatestBlogPosts() {
   const posts = await getAllPosts();
 
   return (
-    <div className="w-full flex flex-col justify-start items-center py-6 h-[calc(100%-8rem)] md:h-[calc(100vh-8rem)] bg-primary">
+    <div className="w-full flex flex-col justify-start items-center py-6 h-[calc(100%-8rem)] md:h-[calc(100vh-8rem)] bg-primary text-complimentary">
       <div className="w-[90%] flex flex-col justify-start items-start mb-5 md:w-[100%] md:px-4 lg:w-[78%] lg:px-0">
         <h1 className="font-anton text-2xl md:text-3xl xl:text-4xl text-complimentary">
           AKTUALNOŚCI
@@ -21,7 +21,10 @@ export default async function LatestBlogPosts() {
         ))}
       </div>
       <div className="w-[90%] mt-5 md:w-[100%] md:px-4 lg:w-[78%] lg:px-0">
-        <Link href="#" className="w-full flex justify-center md:justify-end ">
+        <Link
+          href="/aktualnosci"
+          className="w-full flex justify-center md:justify-end "
+        >
           <Button className="w-full text-xl px-6 py-6 md:w-auto">
             AKTUALNOŚCI - ŚLEDŹ INFORMACJE{' '}
           </Button>

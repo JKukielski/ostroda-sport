@@ -26,7 +26,7 @@ export default async function Posts(props) {
   const totalPages = Math.ceil(totalPosts / postsPerPage);
 
   return (
-    <section className="w-full flex flex-col justify-start items-center py-6 h-[calc(100%-8rem)] md:h-[calc(100vh-8rem)] ">
+    <section className="w-full flex flex-col justify-start items-center py-6">
       <div className="w-[90%] flex flex-col justify-start items-start mb-5 md:w-[100%] md:px-4 lg:w-[78%] lg:px-0">
         <h1 className="font-anton text-2xl md:text-3xl xl:text-4xl">
           AKTUALNOŚCI
