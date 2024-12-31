@@ -19,8 +19,8 @@ export default function Navbar() {
                 src="/logo_light.png"
                 alt="logo"
                 width={100}
-                height={50}
-                style={{ width: '100px', height: '50px' }}
+                height={40}
+                style={{ width: '100px', height: '40px' }}
               />
             </Link>
           </div>
