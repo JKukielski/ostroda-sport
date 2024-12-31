@@ -21,6 +21,7 @@ export default function SponsorCard({ name, src, url }) {
             initial={{ opcaity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            style={{ zIndex: 10 }}
           >
             <div className="absolute bg-black pointer-events-none opacity-50 h-full w-full" />
             <motion.h1
@@ -36,7 +37,9 @@ export default function SponsorCard({ name, src, url }) {
           </motion.a>
         )}
       </AnimatePresence>
-      <Image src={src} alt={name} fill style={{ objectFit: 'contain' }} />
+      <Link href={url}>
+        <Image src={src} alt={name} fill style={{ objectFit: 'contain' }} />
+      </Link>
     </motion.div>
   );
 }
