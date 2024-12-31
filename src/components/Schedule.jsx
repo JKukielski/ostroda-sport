@@ -22,17 +22,18 @@ export default function Schedule() {
                 Harmonogram treningów dostępny jest w dysku Google pod poniższym
                 linkiem.
               </p>
-              <Link
-                href="https://docs.google.com/file/d/1-
-            1C_YvsplQAtKdFPTkPfAOoTEGMzHHqV/edit?usp=docslist_api&amp;filetype=msword"
-                className=" relative text-additional font-roboto mt-4"
+              <a
+                href="https://docs.google.com/file/d/1-1C_YvsplQAtKdFPTkPfAOoTEGMzHHqV/edit?usp=docslist_api&filetype=msword"
+                className="relative text-additional font-roboto mt-4"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Button className="md:text-xl md:px-6 md:py-6">
                   Harmonogram treningów
                 </Button>
                 {/* Harmonogram treningów
               <PiHandPointingBold className="absolute -left-5 -bottom-5 text-additional text-3xl" /> */}
-              </Link>
+              </a>
             </div>
           </div>
         </div>
