@@ -19,7 +19,9 @@ export const roboto = Roboto({
 
 export const metadata = {
   title: 'Ostróda Sport Team',
-  description: '',
+  icons: {
+    icon: '/icon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
