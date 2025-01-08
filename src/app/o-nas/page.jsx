@@ -36,14 +36,18 @@ export default function page() {
               </div>
             </div>
             <p>
-              Klub postawał z <b>inicjatywy Jędrzeja Żebrowskiego</b>, który
-              jako pasjonat kolarstwa górskiego startował w zawodach MTB i
-              postawił przekazać swoją sportową pasję dzieciom.
+              Klub powstał z <b>inicjatywy Jędrzeja Żebrowskiego</b>, który jako
+              pasjonat kolarstwa górskiego startował w zawodach MTB i postawił
+              przekazać swoją sportową pasję dzieciom.
             </p>
             <p>
-              Naszym celem jest <b>propagowanie zdrowego trybu życia</b> wśród
-              wszystkich ludzi, a przede wszystkim wśród młodzieży. Największy
-              nacisk w OST kładziemy na zachęcenie ludzi do{' '}
+              Naszym celem jest{' '}
+              <b>
+                szkolenie dzieci i młodzieży w kolarstwie oraz triathlonie,
+                propagowanie zdrowego trybu życia i wzrost popularności naszych
+                dyscyplin sportowych.
+              </b>{' '}
+              Największy nacisk w OST kładziemy na zachęcenie do{' '}
               <b>uprawiania sportu</b>. Naszą myślą przewodnią jest, że{' '}
               <b>SPORT UCZY ŻYCIA</b>. Sport ma zapewnić rozwój i przygotwać
               młodego człowieka do dorosłego życia poprzez rozwój wielu cech,
@@ -55,12 +59,13 @@ export default function page() {
               .
             </p>
             <p>
-              Kolarstwo i triathlon to <b>niezwykle trudne</b>, ale i ciekawe
-              dyscypliny sportowe, które zapewniają wiele wrażeń i
-              niezapomnianych przygód. Regularne uczestnictwo w naszych
-              zajęciach pozwala poprawiać swoje przygotowanie kondycyjne oraz
-              techniczne. Przez sport kształtujemy również młode charaktery.
-              Uczymy <b>zdrowej rywalizacji, współzawodnictwa</b>, ale również
+              Kolarstwo i triathlon to{' '}
+              <b>niezwykle trudne, ale i ciekawe dyscypliny sportowe</b>, które
+              zapewniają wiele wrażeń i niezapomnianych przygód. Regularne
+              uczestnictwo w naszych zajęciach pozwala poprawiać swoje
+              przygotowanie kondycyjne oraz techniczne. Przez sport kształtujemy
+              również młode charaktery. Uczymy{' '}
+              <b>zdrowej rywalizacji, współzawodnictwa</b>, ale również{' '}
               <b>wspierania się w grupie</b>, jaką jest drużyna – tworząc bardzo
               trwałe więzi. Bardzo duży nacisk kładziemy na uprawianie sportu
               zgodnie z zasadą <b>FAIR-PLAY</b>.
@@ -74,11 +79,23 @@ export default function page() {
               />
             </div>
             <p>
-              Prowadzimy <b>spotkania z młodzieżą w szkołach</b>. Poruszamy
-              wiele ważnych tematów – bezpieczeństwo w ruchu drogowym, jak ważna
-              jest pasja w życiu, aż wreszcie promujemy sport, aktywność
-              fizyczną i zasady zdrowego odżywania.
+              Nasi zawodnicy{' '}
+              <b>z powodzeniem startują w zawodach i wyścigach.</b> Często
+              stając na podium wielu sportowych imprez.
+              <b> Każdy zawodnik daje z siebie wszystko na treningach</b>{' '}
+              starając się przybliżyć do swoich sportowych marzeń, a w{' '}
+              <b>UKS OST</b> pomagamy te marzenia osiągnąć. Zapraszamy do nas,
+              żeby zacząć swoją <b>sportową przygodę</b> z kolarstwem lub
+              triathlonem.
             </p>
+            <p>
+              UKS OST <b>to nie tylko treningi i wyścigi.</b> Prowadzimy{' '}
+              <b>spotkania z młodzieżą w szkołach.</b> Poruszamy wiele ważnych
+              tematów – bezpieczeństwo w ruchu drogowym, jak ważna jest pasja w
+              życiu, aż wreszcie promujemy sport, aktywność fizyczną i zasady
+              zdrowego odżywania.
+            </p>
+
             <p>
               Organizujemy <b>szkolenia i prelekcje</b>. Zwiększamy wiedzę i
               świadomość rodziców oraz zawodników. Na szkoleniach poruszamy
