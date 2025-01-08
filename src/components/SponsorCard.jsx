@@ -37,7 +37,7 @@ export default function SponsorCard({ name, src, url }) {
           </motion.a>
         )}
       </AnimatePresence>
-      <Link href={url}>
+      <Link href={url} target="_blank">
         <Image src={src} alt={name} fill style={{ objectFit: 'contain' }} />
       </Link>
     </motion.div>
