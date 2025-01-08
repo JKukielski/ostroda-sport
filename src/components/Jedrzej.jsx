@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebookF, FaInstagram, FaPhoneAlt } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaPhoneAlt, FaTiktok } from 'react-icons/fa';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 
 export default function Jedrzej() {
@@ -24,7 +24,7 @@ export default function Jedrzej() {
               Jędrzej Żebrowski
             </h2>
             <p className="text-xs text-gray-400 xl:text-sm">
-              Prezes UKS OST, Trener
+              Prezes UKS OST, Trener, Fizjoterapeuta, Trener Personalny
             </p>
             <Link
               href="tel:531039533"
@@ -57,6 +57,14 @@ meW1n"
                 target="_blank"
               >
                 <FaInstagram className="text-sm xl:text-2xl" />
+              </Link>
+              <Link
+                className="bg-additional flex justify-center items-center shadow-sm w-8 h-8 xl:w-12 xl:h-12"
+                href="https://www.tiktok.com/@zebrowerowski.coach?_t=ZN-
+8shz3S2chmQ&amp;_r=1"
+                target="_blank"
+              >
+                <FaTiktok className="text-sm xl:text-2xl" />
               </Link>
             </div>
           </div>

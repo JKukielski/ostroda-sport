@@ -20,13 +20,15 @@ export default function Monika() {
         <div className="w-full flex justify-between mb-4">
           <div className="flex flex-col gap-1">
             <h2 className="font-anton text-xl xl:text-3xl">Monika Habant</h2>
-            <p className="text-xs text-gray-400 xl:text-sm">Trener OST</p>
+            <p className="text-xs text-gray-400 xl:text-sm">
+              Trener UKS OST, Trener Personalny, Dietetyk
+            </p>
             <Link
-              href="tel:727665171"
+              href="tel:783618532"
               className="flex items-center justify-start gap-1 mt-2"
             >
               <FaPhoneAlt className="text-sm xl:text-xl" />
-              <p className="text-sm xl:text-base">727 665 171</p>
+              <p className="text-sm xl:text-base">783 618 532</p>
             </Link>
             <Link
               href="mailto:Mhabant@icloud.com"
@@ -50,6 +52,13 @@ export default function Monika() {
 M2dq"
               >
                 <FaInstagram className="text-sm xl:text-2xl" />
+              </Link>
+              <Link
+                className="bg-additional flex justify-center items-center shadow-sm w-8 h-8 xl:w-12 xl:h-12"
+                href="https://www.tiktok.com/@monika.habant?_t=ZN-8shz5qXytz4&amp;_r=1"
+                target="_blank"
+              >
+                <FaTiktok className="text-sm xl:text-2xl" />
               </Link>
             </div>
           </div>
