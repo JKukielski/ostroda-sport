@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <section className="w-full flex justify-center bg-primary text-complimentary font-roboto pt-6 pb-2">
       <div className="w-full lg:w-[80%] flex flex-col px-3">
-        <div className="flex flex-col gap-6 md:flex-row">
+        <div className="flex flex-col gap-6 text-sm md:text-base md:flex-row">
           <div className="flex flex-col">
             {' '}
             <div className="w-[50%] flex justify-start items-center mb-6 pl-3">
