@@ -31,11 +31,11 @@ export default function Monika() {
               <p className="text-sm xl:text-base">783 618 532</p>
             </Link>
             <Link
-              href="mailto:Mhabant@icloud.com"
+              href="mailto:habantmonika@gmail.com"
               className="flex items-center justify-start gap-1"
             >
               <MdOutlineAlternateEmail className="text-sm xl:text-xl" />
-              <p className="text-sm xl:text-base">mhabant@icloud.com</p>
+              <p className="text-sm xl:text-base">habantmonika@gmail.com</p>
             </Link>
             <div className="w-full flex items-center justify-start gap-2 mt-2">
               <Link
