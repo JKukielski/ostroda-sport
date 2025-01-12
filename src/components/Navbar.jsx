@@ -95,6 +95,11 @@ export default function Navbar() {
                 KONTAKT
               </li>
             </Link>
+            <Link href="/galeria" className="h-full group">
+              <li className="transition-transform duration-300 border-b-4 border-solid border-additional group-hover:border-primary h-full flex items-center">
+                GALERIA
+              </li>
+            </Link>
           </ul>
         </div>
       </div>
@@ -158,6 +163,14 @@ export default function Navbar() {
               role="menuitem"
             >
               KONTAKT
+            </Link>
+            <Link
+              onClick={() => setToggleMenu(false)}
+              href="/galeria"
+              className="block rounded-lg px-4 py-2 text-sm text-complimentary hover:bg-gray-50 hover:text-gray-700"
+              role="menuitem"
+            >
+              GALERIA
             </Link>
           </div>
         </div>
