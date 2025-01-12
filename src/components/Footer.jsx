@@ -51,7 +51,7 @@ export default function Footer() {
                 alt="galaxy-coding-logo"
                 width={80}
                 height={50}
-                objectFit="contain"
+                style={{ objectFit: 'contain' }}
               />
             </Link>
           </div>
