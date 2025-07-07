@@ -43,7 +43,7 @@ export default function Contact() {
                 className="flex items-center justify-start gap-1 mt-2"
               >
                 <FaPhoneAlt className="text-sm xl:text-xl" />
-                <p className="">531 039 531</p>
+                <p className="">531 039 533</p>
               </Link>
               <Link
                 href="mailto:ostrodasportteam@gmail.com"
